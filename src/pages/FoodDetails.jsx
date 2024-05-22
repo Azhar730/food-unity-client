@@ -19,7 +19,7 @@ const FoodDetails = () => {
     const food = useLoaderData()
     const { _id, foodName, foodImage, foodQuantity,
         pickupLocation, expiredDate,
-        additionalNotes, foodStatus, donator
+        additionalNotes, donator
     } = food
 
     const handleFormSubmit =async e => {
