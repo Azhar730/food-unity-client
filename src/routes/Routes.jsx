@@ -13,7 +13,6 @@ import FoodDetails from "../pages/FoodDetails";
 import UpdateFood from "../pages/UpdateFood";
 import PrivateRoute from "./PrivateRoute";
 
-
 const router = createBrowserRouter([
     {
       path: "/",
