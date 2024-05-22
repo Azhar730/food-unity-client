@@ -5,7 +5,7 @@ const Footer = () => {
         <div className='container px-6 py-8 mx-auto'>
           <div className='flex flex-col items-center text-center'>
             <div className='flex gap-2 items-center'>
-              <img className='w-auto h-7' src='' alt='' />
+              <img className='w-auto h-7' src='https://i.postimg.cc/6pMtfcKv/Unity-Foods-Logo.png' alt='' />
               <span>FoodUnity</span>
             </div>
   
@@ -61,7 +61,7 @@ const Footer = () => {
   
           <div className='flex flex-col items-center sm:flex-row sm:justify-between'>
             <p className='text-sm text-gray-500 '>
-              © Copyright 2021. All Rights Reserved.
+              © Copyright 2024. All Rights Reserved.
             </p>
   
             <div className='flex -mx-2'>
