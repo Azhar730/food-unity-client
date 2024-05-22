@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         {
             path: '/food/:id',
             element: <FoodDetails></FoodDetails>,
-            loader: ({params})=>fetch(`http://localhost:5000/food/${params.id}`)
+            loader: ({params})=>fetch(`${import.meta.env.VITE_API_URL}/food/${params.id}`)
         },
         {
             path: '/login',
