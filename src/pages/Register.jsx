@@ -22,6 +22,15 @@ const Register = () => {
     const name = form.name.value;
     const photo = form.photo.value;
     const password = form.password.value;
+    if (password.length < 6) {
+      return toast.error('Password should be Atleast 6 character or longer')
+    }
+    else if (!/[A-Z]/.test(password)) {
+      return toast.error('Your Password Should have Atleast one UPPERCASE')
+    }
+    else if (!/[a-z]/.test(password)) {
+      return toast.error('Your Password Should have Atleast one lowercase')
+    }
     try {
       const result = await createUser(email, password)
       console.log(result);
