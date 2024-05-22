@@ -10,12 +10,12 @@ const Profile = () => {
         const form = e.target;
         const fullName = form.fullName.value;
         const photo = form.photo.value
-        await updateUserProfile(fullName, photo)
-            .then(() => {
-                setUpdate(!update)
-                navigate(from)
-            })
-        form.reset()
+        // await updateUserProfile(fullName, photo)
+        //     .then(() => {
+        //         setUpdate(!update)
+        //         navigate(from)
+        //     })
+        // form.reset()
     }
     return (
         <div className="flex flex-col gap-x-5 lg:flex-row mt-10">
