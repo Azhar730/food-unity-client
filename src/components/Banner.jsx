@@ -1,40 +1,31 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import Slide from './Slide';
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+// onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}
 const Banner = () => {
-  return (
-    <div className='my-12'>
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <Slide img={'https://i.postimg.cc/76DcX3rG/Chicken-Noodle-Soup.jpg'} text={'Get Your Web Development Project Done in Minutes'}></Slide>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide img={'https://i.postimg.cc/fRLW525h/carousel2.jpg'} text={'Get Your Graphic Design Project Done in Minutes'}></Slide>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide img={'https://i.postimg.cc/B6WqSq3q/carousel3.jpg'} text={'Get Your Digital Marketing Project Done in Minutes'}></Slide>
-        </SwiperSlide>
-      </Swiper>
-    </div>
-  );
+    return (
+        <div className="text-center">
+            <Carousel className="mx-auto">
+                <div>
+                    <img src="https://i.postimg.cc/yY7zMcqs/1.avif" />
+                </div>
+                <div>
+                    <img src="https://i.postimg.cc/VL4cmv1M/2.avif" />
+                </div>
+                <div>
+                    <img src="https://i.postimg.cc/520W0JNr/5.avif" />
+                </div>
+                <div>
+                    <img src="https://i.postimg.cc/FHB5k6YH/6.webp" />
+                </div>
+                <div>
+                    <img src="https://i.postimg.cc/XvRRQycM/7.jpg" />
+                </div>
+                <div>
+                    <img src="https://i.postimg.cc/bJ1KMN3Z/9.avif" />
+                </div>
+            </Carousel>
+        </div>
+    );
 };
 
 export default Banner;

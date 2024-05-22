@@ -37,9 +37,9 @@ const NavBar = () => {
                     user?.photoURL && <img title={user?.displayName} className="cursor-pointer w-12 rounded-full" src={user?.photoURL}></img>
                 }
                 {user?
-                    <button className="bg-[#F79520] rounded py-1 px-2 font-semibold cursor-pointer text-lg" onClick={()=>logOut()}>Logout</button>
+                    <button className="bg-[#d9c7b1] text-[#F79520] rounded py-2 px-4 font-semibold cursor-pointer text-lg" onClick={()=>logOut()}>Logout</button>
                     :
-                    <Link to={'/login'} className="bg-[#F79520] rounded py-1 px-4 font-semibold cursor-pointer text-lg">Login</Link> 
+                    <Link to={'/login'} className="bg-[#d9c7b1] text-[#F79520] rounded py-2 px-4 font-semibold cursor-pointer text-lg">Login</Link> 
                 }
             </div>
         </div>
