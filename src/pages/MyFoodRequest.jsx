@@ -61,17 +61,17 @@ const MyFoodRequest = () => {
                                                 scope='col'
                                                 className='px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500'
                                             >
-                                                Food Status
+                                                Pickup Location
                                             </th>
                                             <th
                                                 scope='col'
                                                 className='px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500'
                                             >
-                                                Food Image
+                                                Donator Email
                                             </th>
 
                                             <th className='px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500'>
-                                                Edit
+                                            Food Status
                                             </th>
                                         </tr>
                                     </thead>
@@ -94,6 +94,12 @@ const MyFoodRequest = () => {
                                                     className='px-4 py-4 text-sm text-gray-500  whitespace-nowrap'
                                                 >
                                                     {food.pickupLocation}
+                                                </td>
+                                                <td
+                                                    title=''
+                                                    className='px-4 py-4 text-sm text-gray-500  whitespace-nowrap'
+                                                >
+                                                    {food.donatorEmail}
                                                 </td>
                                                 <td className='px-4 py-4 text-sm whitespace-nowrap'>
                                                     <div className='flex items-center gap-x-2'>

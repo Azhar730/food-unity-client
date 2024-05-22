@@ -5,7 +5,7 @@ import FeaturesFoodsCard from "./FeaturesFoodsCard";
 const FeaturedFoods = () => {
     const [foods, setFoods] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/foods')
+        fetch(`${import.meta.env.VITE_API_URL}/foods`)
             .then(res => res.json())
             .then(data => setFoods(data))
     }, [])

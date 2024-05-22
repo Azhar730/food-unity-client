@@ -1,6 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-// onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}
 const Banner = () => {
     return (
         <div className="text-center">
