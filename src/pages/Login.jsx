@@ -46,7 +46,7 @@ const Login = () => {
         <div
           className='hidden bg-cover bg-center lg:block lg:w-1/2'
           style={{
-            backgroundImage: `url('https://i.postimg.cc/3r6sYwjz/login.jpg')`,
+            backgroundImage: `url('https://i.postimg.cc/MHcFy6NP/login.jpg')`,
           }}
         ></div>
 
@@ -54,7 +54,7 @@ const Login = () => {
           <div className='flex justify-center mx-auto'>
             <img
               className='w-auto h-7 sm:h-8'
-              src='https://i.postimg.cc/Qx2XMmDg/logo.png'
+              src='https://i.postimg.cc/6pMtfcKv/Unity-Foods-Logo.png'
               alt=''
             />
           </div>

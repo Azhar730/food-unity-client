@@ -51,9 +51,9 @@ const ManageMyFoods = () => {
         <div>
             <section className='container px-4 mx-auto pt-12'>
                 <div className='flex items-center gap-x-3'>
-                    <h2 className='text-lg font-medium text-gray-800 '>My Posted Jobs</h2>
+                    <h2 className='text-lg font-medium text-gray-800 '>Manage My Foods</h2>
 
-                    <span className='px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full '>
+                    <span className='px-3 py-1 text-xs text-[#F79520] bg-[#eee7de] rounded-full '>
                         {foods.length} Foods
                     </span>
                 </div>
@@ -125,7 +125,7 @@ const ManageMyFoods = () => {
                                                 <td className='px-4 py-4 text-sm whitespace-nowrap'>
                                                     <div className='flex items-center gap-x-2'>
                                                         <p
-                                                            className='px-3 py-1 rounded-full text-blue-500 bg-blue-100/60
+                                                            className='px-3 py-1 rounded-full text-[#5c3a0f] bg-[#f2ece4]
                                text-xs'
                                                         >
                                                             {food.pickupLocation}
@@ -140,7 +140,7 @@ const ManageMyFoods = () => {
                                                 </td>
                                                 <td className='px-4 py-4 text-sm whitespace-nowrap'>
                                                     <div className='flex items-center gap-x-6'>
-                                                        <button onClick={() => handleDelete(food._id)} className='text-gray-500 transition-colors duration-200   hover:text-red-500 focus:outline-none'>
+                                                        <button onClick={() => handleDelete(food._id)} className='text-[#ef0707] transition-colors duration-200   hover:text-red-500 focus:outline-none'>
                                                             <svg
                                                                 xmlns='http://www.w3.org/2000/svg'
                                                                 fill='none'
@@ -157,7 +157,7 @@ const ManageMyFoods = () => {
                                                             </svg>
                                                         </button>
 
-                                                        <Link to={`/update/${food._id}`} className='text-gray-500 transition-colors duration-200   hover:text-yellow-500 focus:outline-none'>
+                                                        <Link to={`/update/${food._id}`} className='text-[#F79520] transition-colors duration-200   hover:text-yellow-500 focus:outline-none'>
                                                             <svg
                                                                 xmlns='http://www.w3.org/2000/svg'
                                                                 fill='none'
