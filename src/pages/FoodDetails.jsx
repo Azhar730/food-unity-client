@@ -46,11 +46,11 @@ const FoodDetails = () => {
             const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/requestedFood`, modalData)
             if (data.insertedId) {
                 toast.success('Food Item Successfully is in Requested')
-                const data= axios.delete(`${import.meta.env.VITE_API_URL}/food/${_id}`)
-                if(data.deletedCount>0){
-                    toast.success('Delete Successful')
-                }
-                navigate('/myFoodRequest')
+                // const data= axios.delete(`${import.meta.env.VITE_API_URL}/food/${_id}`)
+                // if(data.deletedCount>0){
+                //     toast.success('Delete Successful')
+                // }
+                // navigate('/myFoodRequest')
             }
         } catch (err) {
             if (err) { toast.error('Not Successful') }
