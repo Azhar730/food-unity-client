@@ -24,11 +24,11 @@ const router = createBrowserRouter([
             path: '/',
             element: <Home></Home>
         },
-        {
-            path: '/food/:id',
-            element: <FoodDetails></FoodDetails>,
-            loader: ({params})=>fetch(`${import.meta.env.VITE_API_URL}/food/${params.id}`)
-        },
+        // {
+        //     path: '/food/:id',
+        //     element: <FoodDetails></FoodDetails>,
+        //     loader: ({params})=>fetch(`${import.meta.env.VITE_API_URL}/food/${params.id}`)
+        // },
         {
             path: '/login',
             element: <Login></Login>
